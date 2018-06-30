@@ -492,6 +492,10 @@ header {
 
 /*---------------About------------------*/
 
+.about {
+    border-bottom: 1px solid #000;
+}
+
 .about_box {
     padding: 40px 10px;
     justify-content: center;
