@@ -441,7 +441,8 @@ header {
 }
 
 .logo-heading {
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 10px;
     font-family: 'Norican', cursive;
     font-size: 3em;
 }
@@ -449,11 +450,12 @@ header {
 .logo-subheading {
     padding: 0;
     margin-top: 0;
+    margin-bottom: 4px;
     font-family: 'Norican', cursive;
 }
 
 .logo-image {
-    max-width: 100px;
+    max-width: 90px;
 }
 
 .primary-heading {
