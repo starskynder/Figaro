@@ -514,7 +514,7 @@ nav {
 }
 
 .nav_item:last-of-type {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .nav_item--visible {
