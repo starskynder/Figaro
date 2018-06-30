@@ -442,7 +442,7 @@ p {
 
 .secondary-heading:before,
 .secondary-heading::after {
-    content: "--";
+    content: " ― ";
 }
 
 .secondary-heading--white {
@@ -455,6 +455,14 @@ p {
     color: #fff;
     border: none;
     font-size: 19px;
+    transition: all 0.4s ease-in-out;
+}
+.secondary-btn:visited {
+    background-color: #832525;
+}
+.secondary-btn:focus,
+.secondary-btn:hover {
+    background-color: #D83D3D;
 }
 
 .terziary-heading {
@@ -520,9 +528,20 @@ nav {
     font-size: 1.7em;
 }
 
+.nav_item--trigger:focus,
+.nav_item--trigger:hover {
+    color: #D83D3D;
+}
+
 .nav_link {
     color: #fff;
+    padding: 10px;
     text-decoration: none;
+}
+
+.nav_link:focus,
+.nav_link:hover {
+    background-color: #D83D3D;
 }
 
 /*------------------Header---------------*/
