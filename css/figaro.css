@@ -460,22 +460,42 @@ p {
 nav {
     position: fixed;
     top: 0;
+   
     overflow: hidden;
     width: 100%;
     z-index: 2;
     /* background-color: #000; */
     color: #000;
 }
-
+.js-nav--scroll {
+    background-color: rgb(57, 59, 58);
+    color: #fff;
+}
+.js-nav--black {
+    background-color: rgb(57, 59, 58);
+    color: #fff;
+}
 .nav {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav_item {
     padding: 10px;
     display: none;
+   background-color: rgb(57, 59, 58);
+   
+    transition: all 0.4s ease-in-out;
 }
+.nav_item:first-of-type {
+    background-color: transparent;
+}
+.nav_item--visible {
+    display: block;
 
+   
+}
 .nav_item--trigger {
     display: inline-block;
     margin-right: 20px;
@@ -484,7 +504,7 @@ nav {
 }
 
 .nav_link {
-    color: #cc4646;
+    color: #fff;
     text-decoration: none;
 }
 
