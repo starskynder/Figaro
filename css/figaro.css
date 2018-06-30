@@ -419,6 +419,11 @@ p {
     padding: 3px;
     background-color: hsla(0, 0%, 0%, 0.502);
 }
+.primary-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+}
 .secondary-heading {
     font-family: 'Norican', cursive;
     text-align: center;
