@@ -393,7 +393,7 @@ header,
 .about,
 .about_box,
 .shop,
-.shop-box {
+.shop_box {
     display: flex;
     flex-flow: column wrap;
 }
@@ -402,7 +402,7 @@ header,
 .logo,
 .about_box,
 .shop,
-.shop-box {
+.shop_box {
     align-items: center;
 }
 
@@ -411,7 +411,14 @@ p {
     padding: 10px;
     text-align: justify;
 }
-
+.primary-heading {
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2.2em;
+    margin-top: auto;
+    padding: 3px;
+    background-color: hsla(0, 0%, 0%, 0.502);
+}
 .secondary-heading {
     font-family: 'Norican', cursive;
     text-align: center;
@@ -423,12 +430,22 @@ p {
 
 .secondary-heading--dash {
     border: none;
-    text-shadow: 3px 3px 3px #dfdfdf;
+   
     
 }
 .secondary-heading:before,
 .secondary-heading::after {
     content: "--";
+}
+.secondary-heading--white {
+    color: #fff;
+}
+.secondary-btn {
+    padding: 10px;
+    background-color: #0B1516;
+    color: #fff;
+    border: none;
+    font-size: 19px;
 }
 .terziary-heading {
     font-family: 'Courier New', Courier, monospace;
@@ -498,14 +515,7 @@ header {
     max-width: 90px;
 }
 
-.primary-heading {
-    color: #fff;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 2.2em;
-    margin-top: auto;
-    padding: 3px;
-    background-color: hsla(0, 0%, 0%, 0.502);
-}
+
 
 /*---------------About------------------*/
 
@@ -516,4 +526,21 @@ header {
 .about_box {
     padding: 40px 10px;
     justify-content: center;
+}
+
+/*--------------Shop By Category--------------*/
+.shop {
+    background-color: #393B3A;
+}
+.shop_box {
+   
+    width: 90%;
+    padding: 30px 10px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+.shop_box .secondary-btn {
+    margin: 20px;
+    margin-left: auto;
 }
