@@ -391,14 +391,18 @@ img {
 header,
 .logo,
 .about,
-.about_box {
+.about_box,
+.shop,
+.shop-box {
     display: flex;
     flex-flow: column wrap;
 }
 
 header,
 .logo,
-.about_box {
+.about_box,
+.shop,
+.shop-box {
     align-items: center;
 }
 
@@ -415,6 +419,19 @@ p {
     border-bottom: 4px double;
     border-color: #000;
     font-size: 28px;
+}
+
+.secondary-heading--dash {
+    border: none;
+    text-shadow: 3px 3px 3px #dfdfdf;
+    
+}
+.secondary-heading:before,
+.secondary-heading::after {
+    content: "--";
+}
+.terziary-heading {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .heading-icon {
