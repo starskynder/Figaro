@@ -386,28 +386,39 @@ img {
     max-width: 100%;
     height: auto;
 }
-p {
-    font-size: 19px;
-    padding: 10px;
-    text-align: justify;
-}
-.secondary-heading {
-    font-family: 'Norican', cursive;
-    text-align: center;
-    display: inline-block;
-    border-bottom: 4px double black;
-   font-size: 28px;
-}
+
 .nav,
 header,
-.logo {
+.logo,
+.about,
+.about_box {
     display: flex;
     flex-flow: column wrap;
 }
 
 header,
-.logo {
+.logo,
+.about_box {
     align-items: center;
+}
+
+p {
+    font-size: 19px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.secondary-heading {
+    font-family: 'Norican', cursive;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 4px double;
+    border-color: #000;
+    font-size: 28px;
+}
+
+.heading-icon {
+    max-width: 110px;
 }
 
 /*-----------------Navigation----------------*/
@@ -477,4 +488,11 @@ header {
     margin-top: auto;
     padding: 3px;
     background-color: hsla(0, 0%, 0%, 0.502);
+}
+
+/*---------------About------------------*/
+
+.about_box {
+    padding: 40px 10px;
+    justify-content: center;
 }
