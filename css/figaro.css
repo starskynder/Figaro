@@ -411,6 +411,7 @@ p {
     padding: 10px;
     text-align: justify;
 }
+
 .primary-heading {
     color: #fff;
     font-family: 'Share Tech Mono', monospace;
@@ -419,11 +420,13 @@ p {
     padding: 3px;
     background-color: hsla(0, 0%, 0%, 0.502);
 }
+
 .primary-button {
     background-color: transparent;
     border: none;
     color: inherit;
 }
+
 .secondary-heading {
     font-family: 'Norican', cursive;
     text-align: center;
@@ -435,16 +438,17 @@ p {
 
 .secondary-heading--dash {
     border: none;
-   
-    
 }
+
 .secondary-heading:before,
 .secondary-heading::after {
     content: "--";
 }
+
 .secondary-heading--white {
     color: #fff;
 }
+
 .secondary-btn {
     padding: 10px;
     background-color: #0B1516;
@@ -452,6 +456,7 @@ p {
     border: none;
     font-size: 19px;
 }
+
 .terziary-heading {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -465,21 +470,23 @@ p {
 nav {
     position: fixed;
     top: 0;
-   
     overflow: hidden;
     width: 100%;
     z-index: 2;
     /* background-color: #000; */
     color: #000;
 }
+
 .js-nav--scroll {
     background-color: rgb(57, 59, 58);
     color: #fff;
 }
+
 .js-nav--black {
     background-color: rgb(57, 59, 58);
     color: #fff;
 }
+
 .nav {
     list-style-type: none;
     margin: 0;
@@ -489,18 +496,23 @@ nav {
 .nav_item {
     padding: 10px;
     display: none;
-   background-color: rgb(57, 59, 58);
-   
+    background-color: rgb(57, 59, 58);
+    align-self: center;
     transition: all 0.4s ease-in-out;
 }
+
 .nav_item:first-of-type {
     background-color: transparent;
 }
+
+.nav_item:last-of-type {
+    padding-bottom: 50px;
+}
+
 .nav_item--visible {
     display: block;
-
-   
 }
+
 .nav_item--trigger {
     display: inline-block;
     margin-right: 20px;
@@ -540,8 +552,6 @@ header {
     max-width: 90px;
 }
 
-
-
 /*---------------About------------------*/
 
 .about {
@@ -554,11 +564,12 @@ header {
 }
 
 /*--------------Shop By Category--------------*/
+
 .shop {
     background-color: #393B3A;
 }
+
 .shop_box {
-   
     width: 90%;
     padding: 30px 10px;
     background-color: #fff;
