@@ -36,3 +36,46 @@ function showFullNav() {
     nav.classList.toggle("js-nav--black");
 
 }
+
+// Select all images-slider boxes
+const sliderBox = document.getElementsByClassName("slider_box");
+
+// Select images-slider arrows
+const rightArrow = document.querySelector(".slider_arrow--right");
+const leftArrow = document.querySelector(".slider_arrow--left");
+
+// Add event listeners to image-slider arrows
+rightArrow.addEventListener("click", () => {
+    plusSlide(1);
+});
+
+leftArrow.addEventListener("click", () => {
+    plusSlide(-1);
+});
+
+// Set initial index for image-slider
+let sliderIndex = 1;
+
+// Increment or decrement slideIndex
+function plusSlide(n) {
+    slideImage(sliderIndex += n);
+}
+
+
+// Image Slider
+function slideImage(n) {
+
+    if (n > sliderBox.length) {
+        sliderIndex = 1;
+    }
+    if (n < 1) {
+        sliderIndex = sliderBox.length;
+    }
+    for (let i = 0; i < sliderBox.length; i++) {
+        sliderBox[i].style.display = "none";
+    }
+
+    sliderBox[sliderIndex - 1].style.display = "flex";
+
+
+}
