@@ -393,7 +393,9 @@ header,
 .about,
 .about_box,
 .shop,
-.shop_box {
+.shop_box,
+.slider,
+.slider_box {
     display: flex;
     flex-flow: column wrap;
 }
@@ -402,7 +404,9 @@ header,
 .logo,
 .about_box,
 .shop,
-.shop_box {
+.shop_box,
+.slider_box,
+.slider {
     align-items: center;
 }
 
@@ -457,9 +461,11 @@ p {
     font-size: 19px;
     transition: all 0.4s ease-in-out;
 }
+
 .secondary-btn:visited {
     background-color: #832525;
 }
+
 .secondary-btn:focus,
 .secondary-btn:hover {
     background-color: #D83D3D;
@@ -598,4 +604,57 @@ header {
 .shop_box .secondary-btn {
     margin: 20px;
     margin-left: auto;
+}
+
+/*--------------Slider--------------*/
+
+.slider,
+.slider_box {
+    position: relative;
+}
+
+.slider_box {
+    border: 10px solid #fff;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+}
+
+.slider_box:nth-of-type(2),
+.slider_box:nth-of-type(3) {
+    display: none;
+}
+
+.slider_arrow--left,
+.slider_arrow--right {
+    position: absolute;
+    font-size: 50px;
+    margin: 8px;
+    text-shadow: 3px 3px 3px #393B3A;
+    color: #fff;
+    top: 50%;
+    cursor: pointer;
+}
+
+.slider_arrow--left {
+    left: 5px;
+    transform: translate(0, -50%);
+}
+
+.slider_arrow--right {
+    right: 5px;
+    transform: translate(0, -50%);
+}
+
+.slider_quote {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Share Tech Mono', monospace;
+    border: 4px double #000;
+}
+
+.slider_icon {
+    max-width: 60px;
 }
