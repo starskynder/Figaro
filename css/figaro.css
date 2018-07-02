@@ -597,13 +597,15 @@ header {
 
 .shop {
     background-color: #393B3A;
+    padding-top: 40px;
+    padding-bottom: 70px;
 }
 
 .shop_box {
     width: 90%;
     padding: 30px 10px;
     background-color: #fff;
-    margin: 10px auto;
+    margin: 30px auto;
 }
 
 .shop_box .secondary-btn {
@@ -614,7 +616,6 @@ header {
 /*--------------Slider--------------*/
 
 .slider {
-    padding: 40px 0;
     border-bottom: 1px solid #dfdfdf;
 }
 
@@ -624,7 +625,6 @@ header {
 }
 
 .slider_box {
-    border: 10px solid #fff;
     position: relative;
     transition: all 0.7s ease-in-out;
 }
