@@ -419,6 +419,7 @@ p,
     font-size: 19px;
     padding: 10px;
     text-align: justify;
+    line-height: 1.3em;
 }
 
 .primary-heading {
