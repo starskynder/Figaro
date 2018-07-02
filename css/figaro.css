@@ -395,7 +395,9 @@ header,
 .shop,
 .shop_box,
 .slider,
-.slider_box {
+.slider_box,
+.people-choice,
+.people-choice_box {
     display: flex;
     flex-flow: column wrap;
 }
@@ -406,11 +408,14 @@ header,
 .shop,
 .shop_box,
 .slider_box,
-.slider {
+.slider,
+.people-choice,
+.people-choice_box {
     align-items: center;
 }
 
-p {
+p,
+.people-choice_list {
     font-size: 19px;
     padding: 10px;
     text-align: justify;
@@ -608,6 +613,11 @@ header {
 
 /*--------------Slider--------------*/
 
+.slider {
+    padding: 40px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+
 .slider,
 .slider_box {
     position: relative;
@@ -657,4 +667,53 @@ header {
 
 .slider_icon {
     max-width: 60px;
+}
+
+/*---------------People Choice-----------*/
+
+.people-choice {
+    margin: 50px 0;
+}
+
+.people-choice_box {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.people-choice_frame {
+    position: relative;
+    padding: 20px;
+}
+
+.people-choice_ribbon {
+    position: absolute;
+    top: 70%;
+    padding: 10px;
+    background-color: #D83D3D;
+    font-family: 'Share Tech Mono', monospace;
+    left: 0;
+}
+
+.people-choice_ribbon::before {
+    content: " ";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #9e2d2d #9e2d2d transparent;
+}
+
+.people-choice .secondary-heading {
+    font-family: 'Share Tech Mono', monospace;
+    border-bottom: none;
+}
+
+.people-choice_list {
+    margin: 10px 30px;
+    list-style-type: disc;
+}
+
+.people-choice_list li {
+    margin: 15px 0;
 }
