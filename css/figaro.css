@@ -397,7 +397,9 @@ header,
 .slider,
 .slider_box,
 .people-choice,
-.people-choice_box {
+.people-choice_box,
+.happy-client,
+.happy-client_box {
     display: flex;
     flex-flow: column wrap;
 }
@@ -410,7 +412,9 @@ header,
 .slider_box,
 .slider,
 .people-choice,
-.people-choice_box {
+.people-choice_box,
+.happy-client,
+.happy-client_box {
     align-items: center;
 }
 
@@ -674,6 +678,7 @@ header {
 
 .people-choice {
     margin: 50px 0;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .people-choice_box {
@@ -717,4 +722,26 @@ header {
 
 .people-choice_list li {
     margin: 15px 0;
+}
+
+/*-----------Happy Client----------*/
+
+.happy-client {
+   background-color: #fff;
+ padding: 50px 10px;
+
+}
+.happy-client_box {
+    margin: 20px;
+    padding: 40px 10px;
+   text-align: justify;
+   background-image: url(../images/gplaypattern.png);
+  width: 90%;
+}
+
+.happy-client_img {
+    
+    padding: 5px;
+ 
+    max-width: 200px;
 }
