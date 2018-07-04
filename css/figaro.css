@@ -399,7 +399,11 @@ header,
 .people-choice,
 .people-choice_box,
 .happy-client,
-.happy-client_box {
+.happy-client_box,
+.contact,
+.contact_form,
+.contact_box,
+footer {
     display: flex;
     flex-flow: column wrap;
 }
@@ -463,7 +467,8 @@ p,
     color: #fff;
 }
 
-.secondary-btn {
+.secondary-btn,
+.contact_submit {
     padding: 10px;
     background-color: #0B1516;
     color: #fff;
@@ -477,7 +482,9 @@ p,
 }
 
 .secondary-btn:focus,
-.secondary-btn:hover {
+.secondary-btn:hover,
+.contact_submit:focus,
+.contact_submit:hover {
     background-color: #D83D3D;
 }
 
@@ -727,21 +734,80 @@ header {
 /*-----------Happy Client----------*/
 
 .happy-client {
-   background-color: #fff;
- padding: 50px 10px;
-
+    background-color: #fff;
+    padding: 50px 10px;
 }
+
 .happy-client_box {
     margin: 20px;
     padding: 40px 10px;
-   text-align: justify;
-   background-image: url(../images/gplaypattern.png);
-  width: 90%;
+    text-align: justify;
+    background-image: url(../images/gplaypattern.png);
+    width: 90%;
 }
 
 .happy-client_img {
-    
     padding: 5px;
- 
     max-width: 200px;
+}
+
+/*---------------------Footer--------------------*/
+
+footer {
+    padding: 10px;
+}
+
+/*--------------Contact--------------*/
+
+.contact {
+    min-width: 90%;
+    align-self: center;
+    border: 1px solid black;
+}
+
+.contact_box {
+    margin: 0;
+    padding: 0;
+    flex-flow: row wrap;
+}
+
+.contact .secondary-heading {
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact_input,
+textarea,
+.contact_submit {
+    padding: 20px;
+}
+
+.contact_box {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact_input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #dfdfdf;
+    transition: all 0.2s linear;
+}
+
+.contact_input:nth-of-type(1) {
+    border-right: 1px solid #dfdfdf;
+}
+
+textarea {
+    border: none;
+    border-top: 1px solid auto;
+    transition: all 0.4s linear;
+}
+
+.contact_box .contact_input {
+    flex: 1;
 }
