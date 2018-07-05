@@ -453,13 +453,8 @@ p,
     font-family: 'Norican', cursive;
     text-align: center;
     display: inline-block;
-    border-bottom: 4px double;
     border-color: #000;
     font-size: 28px;
-}
-
-.secondary-heading--dash {
-    border: none;
 }
 
 .secondary-heading:before,
@@ -605,17 +600,20 @@ header {
 
 .about {
     border-bottom: 1px solid #000;
+    padding: 10%;
 }
 
 .about_box {
     padding: 40px 10px;
     justify-content: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 /*--------------Shop By Category--------------*/
 
 .shop {
-    background-color: #393B3A;
+    background-color: #636262;
     padding-top: 40px;
     padding-bottom: 70px;
 }
@@ -633,6 +631,13 @@ header {
 }
 
 /*--------------Slider--------------*/
+
+.slider-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .slider {
     border-bottom: 1px solid #dfdfdf;
@@ -688,6 +693,11 @@ header {
     max-width: 60px;
 }
 
+.slider-mountain {
+    display: none;
+    padding: 10px;
+}
+
 /*---------------People Choice-----------*/
 
 .people-choice {
@@ -703,6 +713,7 @@ header {
 .people-choice_frame {
     position: relative;
     padding: 20px;
+    max-width: 400px;
 }
 
 .people-choice_ribbon {
@@ -741,7 +752,6 @@ header {
 /*-----------Happy Client----------*/
 
 .happy-client {
-    background-color: #fff;
     padding: 50px 10px;
 }
 
@@ -766,9 +776,10 @@ footer {
 
 /*--------------Contact--------------*/
 
-.contact_form  {
+.contact {
     border: 1px solid #000;
 }
+
 .contact_box {
     margin: 0;
     padding: 0;
@@ -819,9 +830,14 @@ textarea {
 /*---------------Mailing List---------------*/
 
 .mailing-list {
-    padding: 60px 10px;
+    padding: 10px;
     margin: 30px 0;
     border: 1px solid #000;
+}
+
+.mailing-list_module {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .mailing-list_input {
@@ -837,9 +853,11 @@ textarea {
 }
 
 /*--------------Social--------------*/
+
 .social {
-   border: 1px solid black;
+    border: 1px solid black;
 }
+
 .social_icons {
     padding: 40px 10px;
     font-size: 2.2em;
