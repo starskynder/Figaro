@@ -404,7 +404,8 @@ footer,
 .contact,
 .contact_form,
 .contact_box,
-.mailing-list {
+.mailing-list
+{
     display: flex;
     flex-flow: column wrap;
 }
@@ -420,7 +421,8 @@ header,
 .people-choice_box,
 .happy-client,
 .happy-client_box,
-.mailing-list {
+.mailing-list
+ {
     align-items: center;
 }
 
@@ -764,12 +766,9 @@ footer {
 
 /*--------------Contact--------------*/
 
-.contact {
-    min-width: 90%;
-    align-self: center;
-    border: 1px solid black;
+.contact_form  {
+    border: 1px solid #000;
 }
-
 .contact_box {
     margin: 0;
     padding: 0;
