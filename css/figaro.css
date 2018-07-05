@@ -400,10 +400,11 @@ header,
 .people-choice_box,
 .happy-client,
 .happy-client_box,
+footer,
 .contact,
 .contact_form,
 .contact_box,
-footer {
+.mailing-list {
     display: flex;
     flex-flow: column wrap;
 }
@@ -418,7 +419,8 @@ header,
 .people-choice,
 .people-choice_box,
 .happy-client,
-.happy-client_box {
+.happy-client_box,
+.mailing-list {
     align-items: center;
 }
 
@@ -468,7 +470,8 @@ p,
 }
 
 .secondary-btn,
-.contact_submit {
+.contact_submit,
+.mailing-list_subscribe {
     padding: 10px;
     background-color: #0B1516;
     color: #fff;
@@ -484,7 +487,9 @@ p,
 .secondary-btn:focus,
 .secondary-btn:hover,
 .contact_submit:focus,
-.contact_submit:hover {
+.contact_submit:hover,
+.mailing-list_subscribe:focus,
+.mailing-list_subscribe:hover {
     background-color: #D83D3D;
 }
 
@@ -810,4 +815,22 @@ textarea {
 
 .contact_box .contact_input {
     flex: 1;
+}
+
+/*---------------Mailing List---------------*/
+
+.mailing-list {
+    padding: 60px 10px;
+}
+
+.mailing-list_input {
+    padding: 10px;
+}
+
+.mailing-list_heading {
+    align-self: center;
+}
+
+.mailing-list_message {
+    font-family: 'Courier New', Courier, monospace;
 }
