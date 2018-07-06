@@ -899,7 +899,7 @@ textarea {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 599px) {
     header {
         background-image: url(../images/focus-2x.jpg);
     }
@@ -999,5 +999,19 @@ textarea {
     }
     .shop_box {
         flex: 20%;
+    }
+}
+
+/*------- Setting for 4k Ultra HD Television------------*/
+
+@media (min-width: 2000px) {
+    body {
+        max-width: 2000px;
+        margin: auto;
+        height: auto;
+        border: 1px solid #000;
+    }
+    header {
+        max-height: 1650px;
     }
 }
