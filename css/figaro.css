@@ -477,6 +477,11 @@ p,
     transition: all 0.4s ease-in-out;
 }
 
+.secondary-btn {
+    margin: 10px;
+    margin-top: auto;
+}
+
 .secondary-btn:visited {
     background-color: #832525;
 }
@@ -576,6 +581,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    background-color: #D3D4CF;
 }
 
 .logo-heading {
@@ -626,7 +632,6 @@ header {
 }
 
 .shop_box .secondary-btn {
-    margin: 20px;
     margin-left: auto;
 }
 
@@ -778,6 +783,7 @@ footer {
 
 .contact {
     border: 1px solid #000;
+    background-color: #fff;
 }
 
 .contact_box {
@@ -833,6 +839,7 @@ textarea {
     padding: 10px;
     margin: 30px 0;
     border: 1px solid #000;
+    background-color: #fff;
 }
 
 .mailing-list_module {
@@ -856,6 +863,7 @@ textarea {
 
 .social {
     border: 1px solid black;
+    background-color: #fff;
 }
 
 .social_icons {
@@ -880,10 +888,24 @@ textarea {
 
 /*----------Media Queries-----------*/
 
-@media (min-width: 700px) {
+@media screen and (orientation:landscape) {
+    header {
+        position: relative;
+    }
+    .logo {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+}
+
+@media (min-width: 600px) {
     header {
         background-image: url(../images/focus-2x.jpg);
     }
+}
+
+@media (min-width: 700px) {
     .shop,
     .happy-client,
     .people-choice,
@@ -926,17 +948,26 @@ textarea {
         display: flex;
         flex-flow: column wrap;
     }
+    .slider {
+        flex: 60%;
+    }
     .slider-mountain {
         flex: 40%;
     }
-    .slider {
-        flex: 60%;
+}
+
+@media (min-width: 1000px) {
+    header {
+        background-image: url(../images/focus-3x.jpg);
     }
 }
 
 @media (min-width: 1100px) {
-    header {
-        background-image: url(../images/focus-3x.jpg);
+    .logo {
+        position: static;
+    }
+    .primary-heading {
+        font-size: 3em;
     }
     .shop_box,
     .people-choice_box,
@@ -947,13 +978,25 @@ textarea {
         flex: 30%;
         margin: 10px;
     }
-    .shop,
-    .happy-client {
-        padding: 10% 10%;
+    .shop {
+        padding: 10%;
+    }
+    .happy-client,
+    footer {
+        padding: 3%;
+    }
+    .slider {
+        flex: 40%;
+    }
+    .slider-mountain {
+        flex: 60%;
     }
 }
 
 @media (min-width: 1500px) {
+    .primary-heading {
+        font-size: 3.5em;
+    }
     .shop_box {
         flex: 20%;
     }
