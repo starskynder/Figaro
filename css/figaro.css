@@ -503,6 +503,21 @@ p,
     max-width: 110px;
 }
 
+.link {
+    color: #D83D3D;
+    padding: 5px;
+}
+
+.link:visited {
+    color: #6b6a6a;
+}
+.link:focus,
+.link:hover {
+    color: black;
+    background-color: #D83D3D;
+    text-decoration: none;
+}
+
 /*-----------------Navigation----------------*/
 
 nav {
@@ -914,6 +929,7 @@ textarea {
 }
 
 /*------------Credits--------------*/
+
 .credits {
     display: flex;
     flex-flow: row wrap;
