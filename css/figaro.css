@@ -704,9 +704,14 @@ header {
     max-width: 60px;
 }
 
-.slider-mountain {
+.slider-motto {
     display: none;
     padding: 10px;
+}
+
+.slider-motto_content {
+    padding: 5%;
+   
 }
 
 /*---------------People Choice-----------*/
@@ -779,6 +784,9 @@ header {
     max-width: 200px;
 }
 
+.happy-client_review {
+    max-width: 80%;
+}
 /*---------------------Footer--------------------*/
 
 footer {
@@ -949,15 +957,19 @@ textarea {
 @media (min-width: 800px) {
     .slider-wrapper {
         background-image: url(../images/gplaypattern.png);
+        padding: 5%;
     }
-    .slider-mountain {
+    .slider-motto {
         display: flex;
         flex-flow: column wrap;
+       
     }
+
     .slider {
         flex: 60%;
+        margin: auto 0;
     }
-    .slider-mountain {
+    .slider-motto {
         flex: 40%;
     }
 }
@@ -1014,8 +1026,11 @@ textarea {
     .slider {
         flex: 40%;
     }
-    .slider-mountain {
+    .slider-motto {
         flex: 60%;
+    }
+    .about_content {
+        max-width: 70%;
     }
 }
 
@@ -1028,6 +1043,10 @@ textarea {
     }
     .shop_box {
         flex: 20%;
+    }
+    
+    .people-choice_list {
+        max-width: 70%;
     }
 }
 
