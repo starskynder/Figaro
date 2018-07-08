@@ -711,14 +711,13 @@ header {
 
 .slider-motto_content {
     padding: 5%;
-   
 }
 
 /*---------------People Choice-----------*/
 
 .people-choice {
     margin: 50px 0;
-    border-bottom: 1px solid #dfdfdf;
+    /* border-bottom: 1px solid #dfdfdf; */
 }
 
 .people-choice_box {
@@ -751,7 +750,7 @@ header {
     border-color: transparent #9e2d2d #9e2d2d transparent;
 }
 
-.people-choice .secondary-heading {
+.people-choice_heading {
     font-family: 'Share Tech Mono', monospace;
     border-bottom: none;
 }
@@ -768,24 +767,38 @@ header {
 /*-----------Happy Client----------*/
 
 .happy-client {
-    padding: 50px 10px;
+    padding: 5%;
+    background-color: #636262;
 }
 
 .happy-client_box {
     margin: 20px;
     padding: 40px 10px;
     text-align: justify;
-    background-image: url(../images/gplaypattern.png);
+    /* background-image: url(../images/gplaypattern.png); */
+    background-color: #fff;
     width: 90%;
+    
 }
 
 .happy-client_img {
     padding: 5px;
     max-width: 200px;
+    border: 4px double transparent;
+    border-top-color:  #000;
+    border-bottom-color: #000;
+ transition: all 0.4s ease-in-out;
 }
 
 .happy-client_review {
     max-width: 80%;
+}
+.happy-client_box:focus .happy-client_img,
+.happy-client_box:hover .happy-client_img {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left: 4px double #000;
+    border-right: 4px double #000;
 }
 /*---------------------Footer--------------------*/
 
@@ -952,19 +965,26 @@ textarea {
     .slider-wrapper {
         margin: 5%;
     }
+    /* .people-choice:after {
+        content: "";
+        width: 95%;
+        height: 1px;
+        margin: 5%;
+        background-color: #000;
+    } */
 }
 
 @media (min-width: 800px) {
     .slider-wrapper {
-        background-image: url(../images/gplaypattern.png);
+        /* background-image: url(../images/gplaypattern.png); */
         padding: 5%;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
     }
     .slider-motto {
         display: flex;
         flex-flow: column wrap;
-       
     }
-
     .slider {
         flex: 60%;
         margin: auto 0;
@@ -1044,7 +1064,6 @@ textarea {
     .shop_box {
         flex: 20%;
     }
-    
     .people-choice_list {
         max-width: 70%;
     }
