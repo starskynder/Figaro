@@ -775,24 +775,23 @@ header {
     margin: 20px;
     padding: 40px 10px;
     text-align: justify;
-    /* background-image: url(../images/gplaypattern.png); */
     background-color: #fff;
     width: 90%;
-    
 }
 
 .happy-client_img {
     padding: 5px;
     max-width: 200px;
     border: 4px double transparent;
-    border-top-color:  #000;
+    border-top-color: #000;
     border-bottom-color: #000;
- transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .happy-client_review {
     max-width: 80%;
 }
+
 .happy-client_box:focus .happy-client_img,
 .happy-client_box:hover .happy-client_img {
     border-top-color: transparent;
@@ -800,6 +799,7 @@ header {
     border-left: 4px double #000;
     border-right: 4px double #000;
 }
+
 /*---------------------Footer--------------------*/
 
 footer {
@@ -1066,6 +1066,9 @@ textarea {
     }
     .people-choice_list {
         max-width: 70%;
+    }
+    .social_icons {
+        font-size: 3.8em;
     }
 }
 
