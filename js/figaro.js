@@ -1,5 +1,6 @@
 // Select navbar
 const nav = document.querySelector("nav");
+const navLinks = document.querySelectorAll(".nav_link");
 
 // Select navbar items
 const navItems = document.querySelectorAll(".nav_item");
@@ -12,8 +13,15 @@ window.onscroll = () => {
 
     if (this.scrollY >= 10) {
         nav.classList.add("js-nav--scroll");
+        navLinks.forEach((v) => {
+            v.classList.add("js-nav_link--scroll");
+
+        });
     } else {
         nav.classList.remove('js-nav--scroll');
+        navLinks.forEach((v) => {
+            v.classList.remove("js-nav_link--scroll");
+        });
     }
 
 };
